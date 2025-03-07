@@ -1,3 +1,5 @@
+Frontend
+
 Lenguajes de Programación Utilizados
 TypeScript: Angular está basado en TypeScript, un superset de JavaScript, que permite agregar tipado estático a las aplicaciones web.
 HTML/CSS: Para la estructura y el estilo de la interfaz de usuario.
