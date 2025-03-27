@@ -1,0 +1,30 @@
+* [33m88a1723[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mfeature/frontend_VEROSB[m[33m)[m Carpeta frontend
+[31m|[m * [33m96c1879[m[33m ([m[1;31morigin/feature/frontend_VEROSB[m[33m)[m Carpeta frontend
+[31m|[m[31m/[m  
+[31m|[m * [33m333b41a[m[33m ([m[1;31morigin/develop[m[33m)[m Merge pull request #7 from verosb/feature/backend-docs-v2_IDOR
+[31m|[m[31m/[m[34m|[m 
+[31m|[m * [33m3e13681[m[33m ([m[1;31morigin/feature/backend-docs-v2_IDOR[m[33m, [m[1;32mfeature/backend-docs-v2_IDOR[m[33m)[m Documentación Backend
+[31m|[m[31m/[m  
+*   [33m0eb97cf[m[33m ([m[1;32mdevelop[m[33m)[m Merge pull request #6 from verosb/revert-5-feature/backend-docs_IDOR
+[35m|[m[36m\[m  
+[35m|[m * [33m5e49028[m Revert "Documentación Backend"
+[35m|[m[35m/[m  
+*   [33meab340a[m Merge pull request #5 from verosb/feature/backend-docs_IDOR
+[1;31m|[m[1;32m\[m  
+[1;31m|[m * [33mf81ba24[m[33m ([m[1;31morigin/feature/backend-docs_IDOR[m[33m, [m[1;32mfeature/backend-docs_IDOR[m[33m)[m Documentación Backend
+* [1;32m|[m [33m1438a72[m Merge pull request #4 from verosb/feature/documentacion-docs_MARAQUED
+[1;33m|[m[1;32m\[m[1;32m|[m 
+[1;33m|[m * [33m15671ad[m[33m ([m[1;31morigin/feature/documentacion-docs_MARAQUED[m[33m, [m[1;32mfeature/documentacion-docs_MARAQUED[m[33m)[m Documentación General
+* [1;34m|[m [33m95a5179[m Merge pull request #3 from verosb/feature/frontend-docs_VEROSB
+[1;35m|[m[1;34m\[m[1;34m|[m 
+[1;35m|[m * [33mf06dd29[m[33m ([m[1;31morigin/feature/frontend-docs_VEROSB[m[33m, [m[1;32mfeature/frontend-docs_VEROSB[m[33m)[m Documentacion del Frontend
+* [1;36m|[m [33m2f0286b[m Merge pull request #2 from verosb/feature/springboot-init_IDOR
+[31m|[m[1;36m\[m[1;36m|[m 
+[31m|[m * [33mc637412[m[33m ([m[1;31morigin/feature/springboot-init_IDOR[m[33m, [m[1;32mfeature/springboot-init_IDOR[m[33m)[m Inicialización de Spring Boot
+[31m|[m[31m/[m  
+*   [33md2184d1[m Merge pull request #1 from verosb/evidencia-jira_Verosb
+[33m|[m[34m\[m  
+[33m|[m * [33m780d114[m[33m ([m[1;31morigin/evidencia-jira_Verosb[m[33m, [m[1;32mevidencia-jira_Verosb[m[33m)[m Tablero de Jira
+[33m|[m[33m/[m  
+* [33mc4bdd0a[m[33m ([m[1;32mevidencia-jira[m[33m)[m Carpeta Docs
+* [33mcd4721b[m[33m ([m[1;32mmaster[m[33m)[m Se agregó la carpeta Docs en la raíz del Proyecto
