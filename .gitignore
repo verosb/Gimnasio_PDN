@@ -1,0 +1,21 @@
+# ⚙️ Dependencias y paquetes de Node.js
+node_modules/
+package-lock.json
+
+# 🔄 Caché y configuraciones temporales de herramientas
+.vscode/
+
+# 🛠 Reportes de pruebas y cobertura
+coverage/
+
+# 📂 Archivos estáticos (subir solo si es necesario)
+public/
+
+# 🗂 Archivos específicos del sistema y logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.DS_Store
+Thumbs.db
+
