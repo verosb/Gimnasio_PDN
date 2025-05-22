@@ -3,6 +3,7 @@ package com.backend.api.model;
 import jakarta.persistence.*;
 import lombok.*;
 
+
 @Entity
 @Table(name = "users")
 @Getter
