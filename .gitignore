@@ -1,21 +1,44 @@
-# ⚙️ Dependencias y paquetes de Node.js
-node_modules/
-package-lock.json
+# See https://docs.github.com/get-started/getting-started-with-git/ignoring-files for more about ignoring files.
 
-# 🔄 Caché y configuraciones temporales de herramientas
-.vscode/
+# Compiled output
+/dist
+/tmp
+/out-tsc
+/bazel-out
 
-# 🛠 Reportes de pruebas y cobertura
-coverage/
+# Node
+/node_modules
+npm-debug.log
+yarn-error.log
 
-# 📂 Archivos estáticos (subir solo si es necesario)
-public/
+# IDEs and editors
+.idea/
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
 
-# 🗂 Archivos específicos del sistema y logs
-*.log
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
+# Visual Studio Code
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.history/*
+
+# Miscellaneous
+/.angular/cache
+.sass-cache/
+/connect.lock
+/coverage
+/libpeerconnection.log
+testem.log
+/typings
+
+# System files
 .DS_Store
 Thumbs.db
-
+api/src/main/resources/serviceAccountKey.json
+api/src/main/resources/serviceAccountKey.json

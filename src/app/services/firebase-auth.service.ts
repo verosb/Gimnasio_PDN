@@ -1,6 +1,4 @@
 import { Injectable, Inject, PLATFORM_ID } from '@angular/core'; //Servicio de autenticación con firebase
-
-
 import {
   Auth,
   signInWithPopup,
@@ -162,40 +160,40 @@ export class AuthFirebasService {
     );
   }
 
-  // loginWithGithub(): Observable<any> {
-  //   if (!isPlatformBrowser(this.platformId)) {
-  //     return throwError(() => 'Operación no soportada en este entorno');
-  //   }
+  loginWithGithub(): Observable<any> {
+    if (!isPlatformBrowser(this.platformId)) {
+      return throwError(() => 'Operación no soportada en este entorno');
+    }
 
-  //   console.log('Iniciando login con GitHub...');
-  //   const provider = new GithubAuthProvider();
+    console.log('Iniciando login con GitHub...');
+    const provider = new GithubAuthProvider();
 
-  //   provider.setCustomParameters({
-  //     login: 'true', // Fuerza a GitHub a mostrar la página de login
-  //     allow_signup: 'true', // Permite registros nuevos también
-  //   });
+    provider.setCustomParameters({
+      login: 'true', // Fuerza a GitHub a mostrar la página de login
+      allow_signup: 'true', // Permite registros nuevos también
+    });
     
-  //   return from(signInWithPopup(this.auth, provider)).pipe(
-  //     switchMap((result: UserCredential) => {
-  //       console.log('Login con popup exitoso, resultado:', result);
-  //       return this.handleAuthResult(result);
-  //     }),
-  //     catchError((error) => {
-  //       console.error('Error en popup:', error);
-  //       // Si hay error con popup, cambiar a redirección
-  //       if (
-  //         error.code === 'auth/popup-closed-by-user' ||
-  //         error.message?.includes('Cross-Origin') ||
-  //         error.name === 'NotSupportedError'
-  //       ) {
-  //         console.log('Cambiando a método de redirección para GitHub');
-  //         signInWithRedirect(this.auth, provider);
-  //         return of(null); // Indicamos que se está haciendo redirección
-  //       }
-  //       return throwError(() => error);
-  //     })
-  //   );
-  // }
+    return from(signInWithPopup(this.auth, provider)).pipe(
+      switchMap((result: UserCredential) => {
+        console.log('Login con popup exitoso, resultado:', result);
+        return this.handleAuthResult(result);
+      }),
+      catchError((error) => {
+        console.error('Error en popup:', error);
+        // Si hay error con popup, cambiar a redirección
+        if (
+          error.code === 'auth/popup-closed-by-user' ||
+          error.message?.includes('Cross-Origin') ||
+          error.name === 'NotSupportedError'
+        ) {
+          console.log('Cambiando a método de redirección para GitHub');
+          signInWithRedirect(this.auth, provider);
+          return of(null); // Indicamos que se está haciendo redirección
+        }
+        return throwError(() => error);
+      })
+    );
+  }
 
   loginWithFacebook(): Observable<any> {
     if (!isPlatformBrowser(this.platformId)) {

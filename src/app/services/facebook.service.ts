@@ -6,15 +6,15 @@ import { Observable } from 'rxjs';
 })
 export class FacebookAuthService {
   loginWithFacebook():  void {
-    const clientId = '1416327096035564';
-    const redirectUri = 'http://localhost:4200/facebook-callback'; //URL donde facebook redirige con el código
+    const clientId = 'CLIENT_ID';
+    const redirectUri = 'http://localhost:4200/facebook-callback';
     const scope = 'email,public_profile';
 
     const url = `https://www.facebook.com/v18.0/dialog/oauth` +
       `?client_id=${clientId}` +
       `&redirect_uri=${encodeURIComponent(redirectUri)}` +
       `&scope=${encodeURIComponent(scope)}` +
-      `&response_type=code`; //Se le pide a facebook un codigo de auorización
+      `&response_type=code`;
 
     window.location.href = url;
   }
