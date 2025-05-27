@@ -5,7 +5,6 @@ import { environment } from '../../../environments/environment';
 import { AlertService } from '../../Alert/alert.service';
 import { tap } from 'rxjs/operators';
 
-//Redireccion del usuario despues de que autoriza la aplicacion 
 @Component({
   selector: 'app-facebook-callback',
   templateUrl: './facebook-callback.component.html',
@@ -26,9 +25,9 @@ export class FacebookCallbackComponent implements OnInit {
     console.log("Iniciando autenticación con Facebook");
 
     this.route.queryParams.subscribe(params => {
-      const token = params['code']; // Se recibe el codigo de autorizacion enviado por facebook
+      const token = params['code'];
       if (token) {
-        this.exchangeCodeForToken(token); //Envio del codigo a backend para obtener codigo de acceso 
+        this.exchangeCodeForToken(token);
       } else {
         this.error = 'No se recibió el código de autorización de Facebook';
         this.loading = false;
@@ -36,7 +35,6 @@ export class FacebookCallbackComponent implements OnInit {
     });
   }
 
-//Envio post al backend con el codigo para continuar con la autenticacion 
   exchangeCodeForToken(token: string): void {
     console.log("Código recibido de Facebook:", token);
     this.loading = true;
